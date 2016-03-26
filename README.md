@@ -37,6 +37,8 @@ When choosing a selector, use normal CSS selectors, for example:
  - etc.
 
 ### Todo
+In no real order
+
  - Live preview of fonts during browsing.
  - Ability to click text on the page to determine what a selector it is, and auto-fill the selector input of that choice.
  - More filters - category, script, variants, etc
@@ -44,5 +46,7 @@ When choosing a selector, use normal CSS selectors, for example:
  - Links to google fonts on chosen fonts
  - Deep linking (e.g. query string) of selections made.
  - Options object:
-   - limit which fonts are displayed as options
-   - custom google api url (eg if you want to host yourself)
+   - Limit which fonts are displayed as options
+   - Default Script (e.g. Latin, Vietnamese, Hebrew), and limit type of scripts
+   - Custom google api url (eg if you want to host yourself)
+   - Position of the app (e.g. top-left (current default), top-right, bottom-left, bottom-right)
