@@ -10,5 +10,20 @@ describe('App', function () {
 
   it('works', function () {
     expect(App).toExist()
+
+    let renderer = TestUtils.createRenderer();
+    renderer.render(<App />);
+    const AppElement = renderer.getRenderOutput();
+
+    // assert.equal(AppElement.type, 'div');
+    console.log(AppElement.type)
+
+
+    const children = shallowTestUtils.findAllWithType(todolist, Todo);
+
+    // console.log(AppElement.state)
+
+    expect(5).toEqual(5)
+
   });
 });

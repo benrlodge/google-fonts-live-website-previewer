@@ -62,30 +62,30 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var CDN_CSS_URL = "https://s3-us-west-2.amazonaws.com/benrlodge/apis/google-fonts/GFLP.css";
+
 	function renderApp() {
 	  (0, _reactDom.render)(_react2.default.createElement(_App2.default, null), document.getElementById("gflp"));
 	}
 
-	(function () {
+	window.GFLP = function (options) {
 	  if ((0, _jquery2.default)('#gflp').length > 0) {
 	    return;
 	  }
 
-	  var link = "https://s3-us-west-2.amazonaws.com/benrlodge/apis/google-fonts/GFLP.css";
-
-	  if (document.location.hostname === 'localhost') {
-	    link = '/css/GFLP.css';
-	  }
+	  var host = document.location.hostname;
+	  var link = host === 'localhost' ? '/css/GFLP.css' : CDN_CSS_URL;
 
 	  (0, _jquery2.default)('head').append('<link href="' + link + '" rel="stylesheet" />');
 	  (0, _jquery2.default)('body').prepend("<div id='gflp'></div>");
 
 	  (function gflp() {
+	    // temporary hack as the CSS stylesheet is dynamically loaded
 	    setTimeout(function () {
 	      renderApp();
-	    }, 1);
+	    }, 500);
 	  })();
-	})();
+	};
 
 /***/ },
 /* 1 */

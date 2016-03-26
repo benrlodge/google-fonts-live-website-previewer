@@ -1,0 +1,111 @@
+.gflp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 99999999999999999999999999; }
+  .gflp * {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.gflp-toggle {
+  position: fixed;
+  border-radius: 4px;
+  left: 5px;
+  top: 8px;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  font-size: 13px;
+  width: 250px;
+  min-width: 250px;
+  text-align: center;
+  background: #3769cc;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 999;
+  -webkit-transition: all 400ms;
+  transition: all 400ms; }
+  .gflp-toggle:hover {
+    cursor: pointer; }
+  .gflp-toggle.active {
+    width: 425px; }
+
+.gflp-editor-container {
+  background: #3ea9f5;
+  margin-top: 60px;
+  width: 425px;
+  padding: 5px 15px 7px 15px;
+  transform: translateX(-425px);
+  webkit-transition: all 400ms;
+  transition: all 400ms; }
+  .gflp-editor-container.sidebar-shown {
+    transform: translateX(5px); }
+
+.gflp-add-btn {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 13px 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: .6px;
+  width: 100%;
+  background: #3769cc;
+  color: white;
+  text-transform: uppercase; }
+  .gflp-add-btn:hover {
+    cursor: pointer; }
+
+.gflp-selector-input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  color: black !important; }
+
+.gflp-elements {
+  list-style: none;
+  margin-bottom: 0;
+  background: #3ea9f5;
+  padding: 5px;
+  margin: 15px 0 0 0;
+  border: 2px dotted white; }
+
+.gflp-elements-item {
+  margin: 10px 0 10px 4px;
+  font-size: 13px; }
+
+.gflp-item-delete {
+  color: black;
+  margin-right: 10px;
+  padding-left: 5px;
+  display: inline-block; }
+  .gflp-item-delete:hover {
+    cursor: pointer; }
+
+.gflp-link {
+  text-decoration: underline; }
+
+.gflp-link, .footer-left {
+  color: white;
+  font-size: 12px;
+  letter-spacing: .6px; }
+
+.gflp-font-select {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 15px 0 15px 0; }
+  .gflp-font-select .Select-control {
+    border-radius: 0;
+    border: none;
+    height: 40px; }
+  .gflp-font-select .Select-placeholder {
+    top: 5px; }
+  .gflp-font-select .Select-menu-outer {
+    height: 175px;
+    overflow: hidden; }
