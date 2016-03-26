@@ -1,0 +1,128 @@
+$blue: #039be5
+$blue-op: rgba(3, 155, 229, .95)
+$sidebar-width: 425px
+$sans: 'Helvetica Neue', Helvetica, Arial, sans-serif
+$btn-radius: 4px
+
+$bg-color: #3ea9f5
+$btn-color: #3769cc
+
+.gflp
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  color: white
+  z-index: 99999999999999999999999999
+
+  *
+    box-sizing: border-box
+    font-family: $sans
+
+.gflp-toggle
+  position: fixed
+  border-radius: $btn-radius
+  left: 5px
+  top: 8px
+  display: inline-block
+  padding: 15px
+  color: white
+  font-size: 13px
+  width: 250px
+  min-width: 250px
+  text-align: center
+  background: $btn-color
+  font-family: $sans
+  z-index: 999
+  -webkit-transition: all 400ms
+  transition: all 400ms
+  &:hover
+    cursor: pointer
+  &.active
+    width: $sidebar-width
+
+
+.gflp-editor-container
+  background: $bg-color
+  margin-top: 60px
+  width: $sidebar-width
+  padding: 5px 15px 7px 15px
+  transform: translateX(-$sidebar-width)
+  webkit-transition: all 400ms
+  transition: all 400ms
+
+  &.sidebar-shown
+    transform: translateX(5px)
+
+.gflp-add-btn
+  display: block
+  position: relative
+  font-size: 14px
+  border-radius: $btn-radius
+  padding: 13px 10px
+  margin-top: 15px
+  text-align: center
+  font-weight: 400
+  letter-spacing: .6px
+  width: 100%
+  background: $btn-color
+
+  color: white
+  text-transform: uppercase
+  &:hover
+    cursor: pointer
+
+.gflp-selector-input
+  border: none
+  padding: 10px
+  font-size: 16px
+  position: relative
+  width: 100%
+  color: black!important
+
+.gflp-elements
+  list-style: none
+  margin-bottom: 0
+  background: $bg-color
+  padding: 5px
+  margin: 15px 0 0 0
+  border: 2px dotted white
+
+.gflp-elements-item
+  margin: 10px 0 10px 4px
+  font-size: 13px
+
+.gflp-item-delete
+  color: black
+  margin-right: 10px
+  padding-left: 5px
+  display: inline-block
+
+  &:hover
+    cursor: pointer
+
+.gflp-link
+  text-decoration: underline
+
+.gflp-link, .footer-left
+  color: white
+  font-size: 12px
+  letter-spacing: .6px
+
+.gflp-font-select
+  width: 100%
+  display: block
+  position: relative
+  margin: 15px 0 15px 0
+
+  .Select-control
+    border-radius: 0
+    border: none
+    height: 40px
+
+  .Select-placeholder
+    top: 5px
+
+  .Select-menu-outer
+    height: 175px
+    overflow: hidden
