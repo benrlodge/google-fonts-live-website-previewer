@@ -24,7 +24,8 @@ function renderApp() {
   $('body').prepend("<div id='gflp'></div>");
 
   (function gflp() {
-    setTimeout(() => { renderApp() }, 1)
+    // temporary hack as the CSS stylesheet is dynamically loaded
+    setTimeout(() => { renderApp() }, 500)
   })();
 
 }());
