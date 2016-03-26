@@ -56,5 +56,6 @@ In no real order
 If you'd like to run it locally:
  - run `npm start` to start webpack and a local dev server at localhost:8080 (loads the dist/index.html)
  - run `gulp` if you plan on editing styles.
+ - run `npm test` to run tests
 
 To build, run `npm build`
