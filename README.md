@@ -33,7 +33,7 @@ When choosing a selector, use normal CSS selectors, for example:
  - span
  - .some-class
  - .some-class .and-a-descendant
- - .some-class.and-a-child
+ - .some-class > .and-a-child
  - etc.
 
 ### Todo
