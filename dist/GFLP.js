@@ -74,7 +74,7 @@
 	  }
 
 	  var host = document.location.hostname;
-	  var link = host === 'localhost' ? '/css/GFLP.css' : CDN_CSS_URL;
+	  var link = host === 'localhost' ? '/GFLP.css' : CDN_CSS_URL;
 
 	  (0, _jquery2.default)('head').append('<link href="' + link + '" rel="stylesheet" />');
 	  (0, _jquery2.default)('body').prepend("<div id='gflp'></div>");

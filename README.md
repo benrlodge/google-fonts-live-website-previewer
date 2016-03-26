@@ -48,14 +48,13 @@ In no real order
  - Options object:
    - Limit which fonts are displayed as options
    - Default Script (e.g. Latin, Vietnamese, Hebrew), and limit type of scripts
-   - Custom google api url (eg if you want to host yourself)
+   - Custom google api url (e.g. if you want to host yourself)
    - Position of the app (e.g. top-left (current default), top-right, bottom-left, bottom-right)
 
 
 ### Development
 If you'd like to run it locally:
  - run `npm start` to start webpack and a local dev server at localhost:8080 (loads the dist/index.html)
- - run `gulp` if you plan on editing styles.
  - run `npm test` to run tests
 
-To build, run `npm build`
+To build, run `npm run build`

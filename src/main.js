@@ -15,7 +15,7 @@ window.GFLP = function (options) {
   }
 
   const host = document.location.hostname;
-  const link = host === 'localhost' ? '/css/GFLP.css' : CDN_CSS_URL;
+  const link = host === 'localhost' ? '/GFLP.css' : CDN_CSS_URL;
 
   $('head').append(`<link href="${link}" rel="stylesheet" />`);
   $('body').prepend("<div id='gflp'></div>");

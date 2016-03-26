@@ -18,6 +18,7 @@
     "lodash": "^4.6.1",
     "merge-stream": "^1.0.0",
     "mocha": "^2.4.5",
+    "node-sass": "^3.4.2",  
     "react": "^0.14.7",
     "react-addons-css-transition-group": "^0.14.7",
     "react-addons-test-utils": "^0.14.7",
@@ -27,17 +28,13 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "start": "npm run clean && webpack-dev-server --content-base dist --hot --inline",
+    "start": "npm run clean && npm run build-css && npm run build-html && webpack-dev-server --content-base dist --hot --inline",
     "build": "npm run clean && npm run build-html && webpack && npm run build-css",
     "test": "karma start --single-run=false",
-
     "build-html": "cp src/index.html dist/index.html",
     "build-sass": "node-sass --include-path sass src/sass/GFLP.sass temp/app.css",
-    "build-css": "mkdir dist/css && npm run build-sass && cat node_modules/react-select/dist/react-select.min.css temp/app.css > dist/css/GFLP.css",
-    "minify-css" : "",
-    "minify-js" : "",
-    "clean": "rm -r dist/*"
-
+    "build-css": "npm run build-sass && cat node_modules/react-select/dist/react-select.min.css temp/app.css > dist/GFLP.css",
+    "clean": "rm -rf dist && mkdir -p dist"
   },
   "author": "ben lincoln lodge",
   "license": "MIT"
