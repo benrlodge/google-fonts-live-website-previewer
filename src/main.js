@@ -3,10 +3,10 @@ import {render} from 'react-dom';
 import App from './components/App';
 import $ from 'jquery'
 
+const CDN_CSS_URL = "https://s3-us-west-2.amazonaws.com/benrlodge/apis/google-fonts/GFLP.css";
+
 function renderApp() {
-  render(
-    <App />, document.getElementById("gflp")
-  );
+  render( <App />, document.getElementById("gflp") );
 }
 
 window.GFLP = function (options) {
@@ -14,11 +14,8 @@ window.GFLP = function (options) {
     return;
   }
 
-  let link = "https://s3-us-west-2.amazonaws.com/benrlodge/apis/google-fonts/GFLP.css";
-
-  if (document.location.hostname === 'localhost') {
-    link = '/css/GFLP.css';
-  }
+  const host = document.location.hostname;
+  const link = host === 'localhost' ? '/css/GFLP.css' : CDN_CSS_URL;
 
   $('head').append(`<link href="${link}" rel="stylesheet" />`);
   $('body').prepend("<div id='gflp'></div>");
