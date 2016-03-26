@@ -4,6 +4,9 @@ View your website with various google-font selections. E.g. see what your header
 
 Demo coming soon
 
+## Purpose
+You may be wondering, isn't there probably a chrome extension that already does this? Yep, but that's not the idea here. The audience for this is freelancers or other companies that design websites for people who want to make it easy for their clients to view their website with various fonts. Let's be honest, many clients are not tech-savvy, so telling them to go download a chrome extension is not always a wise idea. Furthermore, I plan on adding fine grain control which will allow you to limit which fonts are given as options, as well as preload selections (saved in a query string). And I was looking for a fun new project, so here it is. Feature requests and PRs are welcome.
+
 ## Usage
 Include the javascript, and instantiate it with `GFLP`.
 ```
@@ -23,9 +26,9 @@ No options currently exist, but I' planning on adding finer grain control in fut
  - etc.
 
 ## How's it work
-The app requests a (daily) cached json file of the google fonts api that I've hosted on S3, along with a stylesheet for the app's styles, and then generates a React.js app with a fixed button on the left to start editing. When editing, you specificy a CSS selector and a font-family. Once you submit the the selection, the head of the html is injected with the font-family's font styleheet link, and an internal style of the selection you make is injected into the head as well.
+The app requests a (daily) cached json file of the google fonts api that I've hosted on S3, along with a stylesheet for the app's styles, and then generates a React.js app with a fixed button on the left to start editing. When editing, you specifiy a CSS selector and a font-family. Once you submit the the selection, the head of the html is injected with the font-family's font styleheet link, and an internal style of the selection you make is injected into the head as well.
 
-for example:
+When choosing a selector, use normal CSS selectors, for example:
  - h1
  - span
  - .some-class
@@ -34,8 +37,12 @@ for example:
  - etc.
 
 ### Todo
- - Live preview of font during browsing.
+ - Live preview of fonts during browsing.
  - Ability to click text on the page to determine what a selector it is, and auto-fill the selector input of that choice.
  - More filters - category, script, variants, etc
  - Add to collection feature (similar to google.com/fonts)
  - Links to google fonts on chosen fonts
+ - Deep linking (e.g. query string) of selections made.
+ - Options object:
+   - limit which fonts are displayed as options
+   - custom google api url (eg if you want to host yourself)
