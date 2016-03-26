@@ -2,6 +2,8 @@
 
 View your website with various google-font selections. E.g. see what your headers (h1, h2, h3...) look like with one particular google font, and another for paragraphs. You can use any CSS style selector to target your markup.
 
+Demo coming soon
+
 ## Usage
 Include the javascript, and instantiate it with `GFLP`.
 ```

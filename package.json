@@ -1,7 +1,7 @@
 {
-  "name": "google-fonts-live-preview",
+  "name": "google-fonts-live-website-previewer",
   "version": "0.0.1",
-  "description": "Google Fonts Live Preview",
+  "description": "Google Fonts Live Website Previewer",
   "devDependencies": {
     "babel-core": "^6.7.2",
     "babel-loader": "^6.2.4",
@@ -22,6 +22,6 @@
     "start": "webpack-dev-server --content-base dist --hot --inline",
     "build": "webpack"
   },
-  "author": "binjamin lincoln lodge",
+  "author": "ben lincoln lodge",
   "license": "MIT"
 }
