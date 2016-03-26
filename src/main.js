@@ -9,7 +9,7 @@ function renderApp() {
   );
 }
 
-(function () {
+window.GFLP = function (options) {
   if ( $('#gflp').length > 0 ) {
     return;
   }
@@ -28,4 +28,4 @@ function renderApp() {
     setTimeout(() => { renderApp() }, 500)
   })();
 
-}());
+};
