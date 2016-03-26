@@ -2,7 +2,7 @@
 
 View your website with various google-font selections. E.g. see what your headers (h1, h2, h3...) look like with one particular google font, and another for paragraphs. You can use any CSS style selector to target your markup.
 
-Demo coming soon
+Demo coming soon (for now you clone this repo, and follow the development instructions at the bottom)
 
 ## Purpose
 You may be wondering, isn't there probably a chrome extension that already does this? Yep, but that's not the idea here. The audience for this is freelancers or other companies that design websites for people who want to make it easy for their clients to view their website with various fonts. Let's be honest, many clients are not tech-savvy, so telling them to go download a chrome extension is not always a wise idea. Furthermore, I plan on adding fine grain control which will allow you to limit which fonts are given as options, as well as preload selections (saved in a query string). And I was looking for a fun new project to work on, so here it is. Feature requests and PRs are welcome.
