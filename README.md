@@ -53,5 +53,6 @@ When choosing a selector, use normal CSS selectors, for example:
 ### Development
 If you'd like to run it locally:
  - run `npm start` to start webpack and a local dev server at localhost:8080 (loads the dist/index.html)
+ - run `npm gulp` to edit styles and index.html
  - run `npm test` to run tests
  - run `npm run build` to build

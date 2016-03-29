@@ -8,10 +8,7 @@ $bg-color: #3ea9f5
 $btn-color: #3769cc
 
 .gflp
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
+  width: $sidebar-width
   color: white
   z-index: 99999999999999999999999999
 
@@ -32,7 +29,6 @@ $btn-color: #3769cc
   min-width: 250px
   text-align: center
   background: $btn-color
-  font-family: $sans
   z-index: 999
   -webkit-transition: all 400ms
   transition: all 400ms
@@ -43,6 +39,9 @@ $btn-color: #3769cc
 
 
 .gflp-editor-container
+  position: fixed
+  top: 0
+  left: 0
   background: $bg-color
   margin-top: 60px
   width: $sidebar-width

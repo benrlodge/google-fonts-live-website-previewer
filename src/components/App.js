@@ -60,15 +60,15 @@ class App extends React.Component {
   render () {
     return (
       <div className='gflp'>
+        <NavToggle
+          {...this.state}
+          toggleEditor={this.toggleEditor}
+        />
         <CSSTransitionGroup
           transitionName="revealingSidebar"
           transitionEnterTimeout={400}
           transitionLeaveTimeout={400}
         >
-          <NavToggle
-            {...this.state}
-            toggleEditor={this.toggleEditor}
-          />
           <FontManager
             {...this.state}
             addElement={this.addElement}
