@@ -19,4 +19,27 @@ describe('App', function () {
     expect(app.props.className).toEqual("gflp");
   });
 
+  it('should render the correct children', function () {
+    expect(app.props.children[0]).toNotEqual(null);
+    expect(app.props.children[1]).toNotEqual(null);
+  });
+
+  it('CSSTransitionGroup should render FontManager', function () {
+    expect(app.props.children[1]).toNotEqual(null);
+  });
+
+
+  // it('Toggle Editor should be closed by default', function () {
+  // });
+
+  /*
+  To do:
+   - initial state
+   - addElement
+   - removeElement
+   - toggle editor
+   - font api
+  */
+
+
 });
