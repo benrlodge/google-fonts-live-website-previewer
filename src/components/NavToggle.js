@@ -1,13 +1,14 @@
 import React, {Component, PropTypes} from 'react';
+import classNames from 'classnames';
 
 class NavToggle extends Component {
 
   getClassNames() {
-    let classes = "gflp-toggle";
-    if (this.props.open) {
-      classes += " active";
-    }
-    return classes;
+    return classNames(
+      "gflp-toggle",
+      {"active": this.props.open},
+      this.props.options.position
+    );
   }
 
   render () {

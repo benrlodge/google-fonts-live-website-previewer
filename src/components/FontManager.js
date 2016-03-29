@@ -2,22 +2,19 @@ import React, {Component, PropTypes} from 'react';
 import $ from 'jquery'
 import Editor from './Editor';
 import Elements from './Elements';
+import classNames from 'classnames';
 
 class FontManager extends Component {
 
-
   getClassNames() {
-    let classes = "gflp-editor-container";
-
-    if (this.props.open) {
-      classes += " sidebar-shown"
-    }
-
-    return classes;
+    return classNames(
+      "gflp-editor-container",
+      this.props.options.position,
+      {"sidebar-shown": this.props.open}
+    );
   }
 
   render() {
-
     return (
       <div className={this.getClassNames()}>
         <Editor
@@ -40,5 +37,6 @@ class FontManager extends Component {
     )
   }
 }
+
 
 module.exports = FontManager;

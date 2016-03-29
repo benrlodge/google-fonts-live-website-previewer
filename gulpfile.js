@@ -14,7 +14,6 @@ gulp.task('sass', function() {
   var custom = gulp.src('src/sass/**/*.sass')
     .pipe(sass())
 
-  console.log('do i1!')
   var mergedStream = merge(vendor, custom)
     .pipe(concat('GFLP.css'))
     .pipe(gulp.dest('dist'));

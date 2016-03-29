@@ -62,6 +62,7 @@ class App extends React.Component {
       <div className='gflp'>
         <NavToggle
           {...this.state}
+          {...this.props}
           toggleEditor={this.toggleEditor}
         />
         <CSSTransitionGroup
@@ -71,6 +72,7 @@ class App extends React.Component {
         >
           <FontManager
             {...this.state}
+            {...this.props}
             addElement={this.addElement}
             removeElement={this.removeElement}
           />
@@ -78,6 +80,10 @@ class App extends React.Component {
       </div>
     )
   }
+}
+
+App.defaultProps = {
+  options: {}
 }
 
 module.exports = App;

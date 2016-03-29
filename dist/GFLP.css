@@ -27,6 +27,9 @@
     cursor: pointer; }
   .gflp-toggle.active {
     width: 425px; }
+  .gflp-toggle.top-right {
+    right: 5px;
+    left: auto; }
 
 .gflp-editor-container {
   position: fixed;
@@ -41,6 +44,12 @@
   transition: all 400ms; }
   .gflp-editor-container.sidebar-shown {
     transform: translateX(5px); }
+  .gflp-editor-container.top-right {
+    left: auto;
+    right: 0;
+    transform: translateX(425px); }
+    .gflp-editor-container.top-right.sidebar-shown {
+      transform: translateX(-5px); }
 
 .gflp-add-btn {
   display: block;

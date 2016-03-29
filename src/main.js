@@ -5,8 +5,8 @@ import $ from 'jquery'
 
 const CDN_CSS_URL = "https://s3-us-west-2.amazonaws.com/benrlodge/apis/google-fonts/GFLP.css";
 
-function renderApp() {
-  render( <App />, document.getElementById("gflp") );
+function renderApp(options) {
+  render( <App options={options} />, document.getElementById("gflp") );
 }
 
 window.GFLP = function (options) {
@@ -22,7 +22,7 @@ window.GFLP = function (options) {
 
   (function gflp() {
     // temporary hack as the CSS stylesheet is dynamically loaded
-    setTimeout(() => { renderApp() }, 500)
+    setTimeout(() => { renderApp(options) }, 500)
   })();
 
 };

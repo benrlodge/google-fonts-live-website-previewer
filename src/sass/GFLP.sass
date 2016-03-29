@@ -16,6 +16,8 @@ $btn-color: #3769cc
     box-sizing: border-box
     font-family: $sans
 
+
+
 .gflp-toggle
   position: fixed
   border-radius: $btn-radius
@@ -37,6 +39,10 @@ $btn-color: #3769cc
   &.active
     width: $sidebar-width
 
+  &.top-right
+    right: 5px
+    left: auto
+
 
 .gflp-editor-container
   position: fixed
@@ -52,6 +58,14 @@ $btn-color: #3769cc
 
   &.sidebar-shown
     transform: translateX(5px)
+
+  &.top-right
+    left: auto
+    right: 0
+    transform: translateX($sidebar-width)
+
+    &.sidebar-shown
+      transform: translateX(-5px)
 
 .gflp-add-btn
   display: block
