@@ -7,9 +7,16 @@ import expect from 'expect';
 import App from '../../src/components/App.js';
 
 describe('App', function () {
+  let app;
 
-  it('works', function () {
-    expect(App).toExist()
+  beforeEach(function(){
+    const renderer = TestUtils.createRenderer();
+    renderer.render( <App /> );
+    app = renderer.getRenderOutput();
+  });
+
+  it('should render the correct classnames', function () {
+    expect(app.props.className).toEqual("gflp");
   });
 
 });
