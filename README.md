@@ -4,6 +4,7 @@ View your website with various google-font selections. E.g. see what your header
 
 Demo: [http://www.benrlodge.com/projects/google-fonts-live-website-previewer](http://www.benrlodge.com/projects/google-fonts-live-website-previewer)
 
+This is a WIP - I don't expect to work on it frequently so feel free to fork it or submit any issues if there is a specific feature that would be of use.
 
 ## Purpose
 You may be wondering, isn't there probably a chrome extension that already does this? Yep, but that's not the idea here. The audience for this is freelancers or other agencies that design websites for people who want to make it easy for their clients to view their website with various fonts. Let's be honest, many clients are not tech-savvy, so telling them to go download a chrome extension is not always a wise idea. Furthermore, I plan on adding fine grain control which will allow you to limit which fonts are given as options, as well as preload selections (saved in a query string). And I was looking for a fun new project to work on, so here it is. Feature requests and PRs are welcome.
