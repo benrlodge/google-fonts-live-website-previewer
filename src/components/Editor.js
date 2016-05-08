@@ -50,10 +50,6 @@ class Editor extends Component {
       selector: selector,
       family: this.state.font
     });
-
-    this.setState({
-      elValue: ''
-    });
   }
 
   renderAdd() {

@@ -17,12 +17,12 @@ window.GFLP = function (options) {
   const host = document.location.hostname;
   const link = host === 'localhost' ? '/GFLP.css' : CDN_CSS_URL;
 
+  console.log('append: ', link);
   $('head').append(`<link href="${link}" rel="stylesheet" />`);
   $('body').prepend("<div id='gflp'></div>");
 
   (function gflp() {
-    // temporary hack as the CSS stylesheet is dynamically loaded
-    setTimeout(() => { renderApp(options) }, 500)
+    setTimeout(() => { renderApp(options) }, 1)
   })();
 
 };
