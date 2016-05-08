@@ -13,18 +13,22 @@ Include the javascript, and instantiate it with `GFLP`.
 ```
 <script src="GFLP.js"></script>
 <script>
-  var options = {}; // none currently exist, this is a todo
+  var options = {
+    position: 'top-left' // 'top-right'
+  };
   GFLP(options);
 </script>
 ```
 
 ## Options
-No options currently exist, but I' planning on adding finer grain control in future versions. Some of these include -
+Options are a WIP.
 
+ - Position editor on top-left (current default) or top-right
+
+To do:
  - Include your own google fonts file reference
- - Position of the app (e.g. top-left (current default), top-right, bottom-left, bottom-right)
+ - More positions of the app - bottom-left, bottom-right, custom
  - Default Script (e.g. Latin, Vietnamese, Hebrew)
- - etc.
 
 ## How's it work
 The app requests a (daily) cached json file of the google fonts api that I've hosted on S3, along with a stylesheet for the app's styles, and then generates a React.js app with a fixed button on the left to start editing. When editing, you specifiy a CSS selector and a font-family. Once you submit the the selection, the head of the html is injected with the font-family's font styleheet link, and an internal style of the selection you make is injected into the head as well.
