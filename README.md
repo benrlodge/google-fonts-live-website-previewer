@@ -31,7 +31,7 @@ To do:
  - Default Script (e.g. Latin, Vietnamese, Hebrew)
 
 ## How's it work
-The app requests a (daily) cached json file of the google fonts api that I've hosted on S3, along with a stylesheet for the app's styles, and then generates a React.js app with a fixed button on the left to start editing. When editing, you specifiy a CSS selector and a font-family. Once you submit the the selection, the head of the html is injected with the font-family's font styleheet link, and an internal style of the selection you make is injected into the head as well.
+The app requests a cached json file of the google fonts api that I've hosted on S3, along with a stylesheet for the app's styles, and then generates a React.js app with a fixed button on the left to start editing. When editing, you specifiy a CSS selector and a font-family. Once you submit the the selection, the head of the html is injected with the font-family's font styleheet link, and an internal style of the selection you make is injected into the head as well.
 
 When choosing a selector, use normal CSS selectors, for example:
  - h1
